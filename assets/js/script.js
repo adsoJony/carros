@@ -27,6 +27,7 @@ function initNavbar() {
         }
     });
 }
+
 function initPortfolio() {
     var portfolio = $('#portfolio');
     var items = $('.items', portfolio);
@@ -80,7 +81,16 @@ function initStart() {
     var homeHeight = $(window).innerHeight() - 69;
     $('#home').height(homeHeight);
     // fancybox
-    $(".fancybox").fancybox();
+    // $(".fancybox").fancybox();
+   
+
+    /**Método fancybox con caption */
+      $(".fancybox").fancybox({
+        beforeShow: function(){
+            this.title = $(this.element).data("caption");
+        }
+    });
+
     $('.collapse ul li a').click(function () {
         $(this).parents('.collapse').removeClass('in');
     });
@@ -94,6 +104,8 @@ $(document).ready(function () {
     $(window).resize(function () {
         initStart()
     });
+
+   
 });
 $(window).load(function () {
     $(".loader .fading-line").fadeOut();
