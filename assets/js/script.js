@@ -14,6 +14,8 @@ function initNavbar() {
         easing: easing
     });
 
+    // ** método para el scroll animado  */
+
     $('.nav-external').click(function (e) {
         e.preventDefault();
         $('html, body').stop().animate({
