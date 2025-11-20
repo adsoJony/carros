@@ -82,12 +82,25 @@ function initStart() {
     $('#home').height(homeHeight);
     // fancybox
     // $(".fancybox").fancybox();
-   
 
-    /**Método fancybox con caption */
-      $(".fancybox").fancybox({
-        beforeShow: function(){
-            this.title = $(this.element).data("caption");
+
+    /**Método fancybox con caption 
+     * Este método nos manipula la imagen al darle click , mostrando la imagen mas grande con un resumen
+    */
+    $(".fancybox").fancybox({
+        beforeShow: function () {
+            // this.title = $(this.element).data("caption");
+            // this.title = $(this.element).data("precio");
+            let info = (!$(this.element).data("caption")) ? "---" : $(this.element).data("caption");
+            let precio = (!$(this.element).data("precio")) ? "---" : $(this.element).data("precio");
+            let marca = (!$(this.element).data("marca")) ? "---" : $(this.element).data("marca");
+            let modelo = (!$(this.element).data("modelo")) ? "---" : $(this.element).data("modelo");
+            this.title = '<div style="padding: 10px;">' +
+                '<h5>Marca: ' + marca + ' ' + modelo + '</h5>' +
+                ' <p>Precio:' + precio + '</p>' +
+                info +
+                ' </div>';
+            // return '<div style="padding: 10px;"> <h5>Marca: ' + info + '</h5> <p>precio:' + precio + '</p> </div>';
         }
     });
 
@@ -105,7 +118,7 @@ $(document).ready(function () {
         initStart()
     });
 
-   
+
 });
 $(window).load(function () {
     $(".loader .fading-line").fadeOut();
