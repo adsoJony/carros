@@ -568,6 +568,7 @@ a:focus {
 
 #contact {
   background: url(../img/cover/contact.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="WireTotalSolutions">
@@ -144,18 +144,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand nav-external" href="http:/localhost/carros#home"><strong>ComproTuCarro</strong></a>
+                    <a class="navbar-brand nav-external"
+                        href="http:/localhost/carros#home"><strong>ComproTuCarro</strong></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
-                            <a href="index.html#home">Inicio</a>
+                            <a class="external nav-link" href="./index.html#home">Inicio</a>
                         </li>
                         <li>
                             <a href="index.html#services">Servicios</a>
                         </li>
                         <li>
-                            <a  href="catalogo-ejemplo.html" >Carros</a>
+                            <a href="catalogo-ejemplo.html#carros">Carros</a>
                         </li>
                         <li>
                             <a href="index.html#clients">Clientes</a>
@@ -172,7 +173,7 @@
         </nav>
     </div>
 
-    <div class="catalog-container">
+    <div class="catalog-container" id="carros">
 
         <!-- Filtros -->
         <div class="filters row">
@@ -210,7 +211,64 @@
 
             <!-- Ejemplo de vehículo -->
             <div class="vehicle-card">
-                <img src="https://via.placeholder.com/400x250?text=Vehículo+1">
+                <img src="assets/img/vehicles/fordFocus.jpeg" alt="">
+                <div class="vehicle-info">
+                    <h4>FORD FOCUS TITANIUM AT</h4>
+                    <p><strong>Marca: </strong> FORD</p>
+                    <p><strong>Linea: </strong> FOCUS</p>
+                    <p><strong>Versión: </strong>TITANIUM</p>
+                    <p><strong>Modelo: </strong>2023</p>
+                    <p><strong>Color: </strong>Negro</p>
+                    <p><strong>Combustible: </strong>GASOLINA</p>
+                    <p><strong>Kilómetros: </strong>140.000</p>
+                    <p><strong>Tipo de transmisión: </strong>AUTOMÁTICA</p>
+                    <p><strong>Motor: </strong>2.000cc</p>
+                    <p><strong>Ubicación: </strong>Ciudad - Localidad</p>
+                    <p class="price"><strong>Precio: $</strong>36.900.000</p>
+                    <a href="" class="btn-details">Conocer más</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="assets/img/vehicles/tracker.webp" alt="">
+                <div class="vehicle-info">
+                    <h4>CHEVROLET RACKER MT</h4>
+                    <p><strong>Marca: </strong> CREVOLET</p>
+                    <p><strong>Linea: </strong> TRACKER</p>
+                    <p><strong>Versión: </strong>BASIC</p>
+                    <p><strong>Modelo: </strong>2023</p>
+                    <p><strong>Color: </strong>PLATA METALIC</p>
+                    <p><strong>Combustible: </strong>GASOLINA</p>
+                    <p><strong>Kilómetros: </strong>40.000</p>
+                    <p><strong>Tipo de transmisión: </strong>MECÁNICA</p>
+                    <p><strong>Motor: </strong>1.400cc</p>
+                    <p><strong>Ubicación: </strong>Ciudad - Localidad</p>
+                    <p class="price"><strong>Precio: $</strong>41.900.000</p>
+                    <a href="#" class="btn-details">Conocer más</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="assets/img/vehicles/corolla.webp" alt="">
+                <div class="vehicle-info">
+                    <h4>TOYOTA COROLLA AT</h4>
+                    <p><strong>Marca: </strong> TOYOTA</p>
+                    <p><strong>Linea: </strong> COROLLA</p>
+                    <p><strong>Versión: </strong>PLATINUM</p>
+                    <p><strong>Modelo: </strong>2018</p>
+                    <p><strong>Color: </strong>BLANCO PERLA</p>
+                    <p><strong>Combustible: </strong>GASOLINA</p>
+                    <p><strong>Kilómetros: </strong>80.000</p>
+                    <p><strong>Tipo de transmisión: </strong>AUTOMÁTICA</p>
+                    <p><strong>Motor: </strong>1.800cc</p>
+                    <p><strong>Ubicación: </strong>Ciudad - Localidad</p>
+                    <p class="price"><strong>Precio: $</strong>45.500.000</p>
+                    <a href="" class="btn-details">Conocer más</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="assets/img/car-service.jpg">
                 <div class="vehicle-info">
                     <h4>Toyota Corolla 2020</h4>
                     <p>Automático · 45,000 km</p>
@@ -241,6 +299,25 @@
 
         </div>
     </div>
+
+
+ <script src="assets/js/brands.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+
+
+    <script src="assets/js/modernizr-latest.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.cslider.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/jquery.fancybox-media.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nav.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/twitterFetcher.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
