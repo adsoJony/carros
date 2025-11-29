@@ -281,6 +281,10 @@ a:focus {
   background-color: #71be3c;
 }
 
+.fancybox-title {
+  margin-bottom: 0px;
+}
+
 .page .heading {
   margin-bottom: 60px
 }
@@ -288,6 +292,8 @@ a:focus {
 .page .heading p {
   padding: 15px 0;
 }
+
+
 
 #home {
   padding: 0;
@@ -412,6 +418,7 @@ a:focus {
   left: 0px;
   right: 0px;
   margin-top: -25px;
+
   line-height: 50px;
 }
 

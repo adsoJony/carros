@@ -97,12 +97,33 @@ function initStart() {
             let precio = (!$(this.element).data("precio")) ? "---" : $(this.element).data("precio");
             let marca = (!$(this.element).data("marca")) ? "---" : $(this.element).data("marca");
             let modelo = (!$(this.element).data("modelo")) ? "---" : $(this.element).data("modelo");
-            this.title = '<div style="padding: 10px;">' +
+            this.title = '<div style="">' +
                 '<h5>Marca: ' + marca + ' ' + modelo + '</h5>' +
                 ' <p>Precio:' + precio + '</p>' +
                 info +
                 ' </div>';
             // return '<div style="padding: 10px;"> <h5>Marca: ' + info + '</h5> <p>precio:' + precio + '</p> </div>';
+        }
+    });
+
+    /**
+     * Fancybox Catalogo Productos. Podemos ver como integramos el ink que traemos de data-caption por html y
+     *  las etiquetas que generamos con js
+     * @marca
+     * @modelo
+     * @precio
+     */
+    $(".fancybox-catalogo").fancybox({
+        beforeShow: function () {
+            //  Obtenemos los datos desde la etiqueta con sus propiedades data
+            var marca = (!(this.element).data("marca")) ? "---" : (this.element).data("marca");
+            var modelo = (!(this.element).data("modelo")) ? "--" : (this.element).data("modelo");
+            var info = (!(this.element).data("caption")? "---":(this.element).data("caption"));
+            var precio = (!(this.element).data("precio")) ? "---" : (this.element).data("precio");
+            this.title = `<div class="fancy" id=""><h5>Marca: ${marca} ${modelo}</h5>` +
+                `<p>Precio: ${precio}</p>`+
+                info+
+                    `</div>`;
         }
     });
 
